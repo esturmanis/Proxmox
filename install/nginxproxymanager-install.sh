@@ -28,7 +28,7 @@ $STD apt-get -y install \
   logrotate \
   build-essential \
   git
-msg_ok "Installed Dependencies"
+msg_ok "Installed Dependencies2222"
 
 msg_info "Installing Python Dependencies"
 $STD apt-get install -y \
