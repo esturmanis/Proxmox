@@ -633,6 +633,7 @@ http://dl-cdn.alpinelinux.org/alpine/latest-stable/community
 EOF'
     pct exec "$CTID" -- ash -c "apk add bash >/dev/null"
   fi
+  echo "I am installing $var_install"
   lxc-attach -n "$CTID" -- bash -cx "$(wget -qLO - https://raw.githubusercontent.com/esturmanis/Proxmox/main/install/$var_install.sh)" || exit
 
 }
